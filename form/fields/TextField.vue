@@ -16,8 +16,8 @@
 
 <script lang="ts" setup>
 import { ref, watch } from "vue";
-import FieldWrapper from "@/components/form/fields/FieldWrapper.vue";
-import props from "@/helpers/props";
+import FieldWrapper from "@/components/shared/form/fields/FieldWrapper.vue";
+import props from "@/helpers/shared/props";
 
 const $emit = defineEmits(["update:modelValue", "focus", "blur"]);
 

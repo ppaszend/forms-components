@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import props from "@/helpers/props";
+import props from "@/helpers/shared/props";
 
 const $props = defineProps({
   label: props.label(),

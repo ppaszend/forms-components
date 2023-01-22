@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts" setup>
-import props from "@/helpers/props";
-import { cssAllSidesUnitValidator } from "@/helpers/propValidator";
+import props from "@/helpers/shared/props";
+import { cssAllSidesUnitValidator } from "@/helpers/shared/propValidator";
 
 const $props = defineProps({
   title: {

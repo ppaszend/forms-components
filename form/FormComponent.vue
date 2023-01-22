@@ -30,14 +30,14 @@
 </template>
 
 <script lang="ts" setup>
-import FormColumn from "@/components/form/FormColumn.vue";
-import FormSection from "@/components/form/FormSection.vue";
-import FormStep from "@/components/form/FormStep.vue";
-import FormRow from "@/components/form/FormRow.vue";
+import FormColumn from "@/components/shared/form/FormColumn.vue";
+import FormSection from "@/components/shared/form/FormSection.vue";
+import FormStep from "@/components/shared/form/FormStep.vue";
+import FormRow from "@/components/shared/form/FormRow.vue";
 import { ref } from "vue";
 import { FieldData } from "@/models/FieldData";
-import TextField from "@/components/form/fields/TextField.vue";
-import DateField from "@/components/form/fields/DateField.vue";
+import TextField from "@/components/shared/form/fields/TextField.vue";
+import DateField from "@/components/shared/form/fields/DateField.vue";
 import type { Field, Form } from "@/models/Form";
 
 const props = defineProps<{ form: Form }>();

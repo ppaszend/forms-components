@@ -16,8 +16,8 @@
 <script lang="ts" setup>
 import { DatePicker } from "v-calendar";
 import { ref } from "vue";
-import TextField from "@/components/form/fields/TextField.vue";
-import props from "@/helpers/props";
+import TextField from "@/components/shared/form/fields/TextField.vue";
+import props from "@/helpers/shared/props";
 
 const $props = defineProps({
   name: props.name(),
