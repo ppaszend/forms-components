@@ -19,7 +19,7 @@ import { ref, watch } from "vue";
 import FieldWrapper from "@/components/shared/form/fields/FieldWrapper.vue";
 import props from "@/helpers/shared/props";
 
-const $emit = defineEmits(["update:modelValue", "focus", "blur"]);
+const emit = defineEmits(["update:modelValue", "focus", "blur"]);
 
 const $props = defineProps({
   name: props.name(),
@@ -53,7 +53,7 @@ const $props = defineProps({
 const value = ref($props.modelValue);
 
 watch(value, (newValue) => {
-  $emit("update:modelValue", newValue);
+  emit("update:modelValue", newValue);
 });
 
 watch(
